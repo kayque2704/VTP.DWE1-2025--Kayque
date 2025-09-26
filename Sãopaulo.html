@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo</title>  
+    <style>
+        /* Importação das fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+
+        /* CONFIGURAÇÕES GLOBAIS DE SP */
+        body {
+            background-color: #f7f7f7; /* Fundo geral claro */
+            color: #333;
+            font-family: 'Saira', sans-serif; /* Fonte Específica */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff0d9; /* Fundo da seção SP (Amarelo Claro) */
+            border-left: 5px solid #ff9900; /* Borda Laranja */
+        }
+        h1 {
+            color: #660000; /* Marrom Escuro (Destaque SP) */
+            border-bottom: 3px solid #ff9900; /* Linha Laranja */
+            padding-bottom: 10px;
+        }
+        h2, h3 {
+            color: #660000;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        /* TABELAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-family: Arial, sans-serif; /* Mantém legível */
+        }
+        th {
+            background-color: #ff9900; /* Laranja */
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 1px solid #ff9900;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        /* MENU DE NAVEGAÇÃO */
+        .menu {
+            max-width: 900px;
+            margin: 30px auto 20px auto;
+            padding: 15px;
+            background-color: #ffe0b2; /* Fundo do Menu */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .menu h1, .menu h3 {
+            color: #660000;
+            font-size: 1.5em;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+        .menu a {
+            display: inline-block; /* Alinha horizontalmente */
+            padding: 5px 10px;
+            margin: 5px 10px 5px 0;
+            text-decoration: none;
+            color: #660000;
+            background-color: #fff;
+            border: 1px solid #ff9900;
+            border-radius: 3px;
+        }
+        .menu a:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+
+        /* ESTILO DOS BOTÕES (Voltar ao Topo/Principal) */
+        button {
+            margin-top: 15px;
+            background-color: #ff9900; /* Cor de SP */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-family: 'Saira', sans-serif;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #cc7a00;
+        }
+
+        /* ESTILO DAS IMAGENS (Três em Linha) */
+        .city-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .city-images img {
+            width: calc(33.33% - 7px); /* Garante que caibam 3 com espaço */
+            height: auto;
+            object-fit: cover;
+            border: 2px solid #ff9900;
+            border-radius: 5px;
+        }
+    </style>
+</head>       
+<body>
+    <div class="menu">
+        <h1>Navegue pelas Cidades</h1>
+        <h3>São Paulo</h3>
+        <a href="#sao_paulo">São Paulo</a>
+        <a href="#guarulhos">Guarulhos</a>
+        <a href="#campinas">Campinas</a>
+        <a href="#sorocaba">Sorocaba</a>
+        <a href="#sao_bernardo">São Bernardo do Campo</a>
+    </div>
+
+    <div class="container">
+        <h1 id="sao_paulo">São Paulo</h1>
+        <p>São Paulo é o estado mais populoso e economicamente forte do Brasil.</p>
+        <table>
+            <tr><th>Área</th><td>248.222 km²</td></tr>
+            <tr><th>População</th><td>46.290.000</td></tr>
+            <tr><th>Ano de Fundação</th><td>1554</td></tr>
+            <tr><th>PIB</th><td>R$ 2,053 trilhões</td></tr>
+        </table>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367532.43123812586!2d-46.196530297136!3d-23.912345332142668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cb8e9a42f7%3A0x7e2a2b47dbd4b04e!2sS%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1633361932999!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+        
+        <h2>5 Maiores Cidades de São Paulo</h2>
+
+        <h3 id="guarulhos">Guarulhos</h3>
+        <p>Guarulhos abriga o Aeroporto Internacional de São Paulo, sendo um importante centro urbano e comercial.</p>
+        <p>População: 1.402.127</p>
+        <div class="city-images">
+            <img src="img/gua1.jfif" alt="Guarulhos">
+            <img src="img/gua2.jfif" alt="Guarulhos">
+            <img src="img/gua3.jfif" alt="Guarulhos">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="campinas">Campinas</h3>
+        <p>Campinas é um polo tecnológico e educacional, com diversas universidades e empresas de tecnologia.</p>
+        <p>População: 1.203.274</p>
+        <div class="city-images">
+            <img src="img/cam1.jfif" alt="Campinas">
+            <img src="img/cam2.jfif" alt="Campinas">
+            <img src="img/cam3.jfif" alt="Campinas">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="sorocaba">Sorocaba</h3>
+        <p>Sorocaba é uma cidade em crescimento, com diversas indústrias e um forte setor comercial.</p>
+        <p>População: 651.327</p>
+        <div class="city-images">
+            <img src="img/sor1.jfif" alt="Sorocaba">
+            <img src="img/sor2.jfif" alt="Sorocaba">
+            <img src="img/sor3.jfif" alt="Sorocaba">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="sao_bernardo">São Bernardo do Campo</h3>
+        <p>São Bernardo do Campo é um importante centro industrial, conhecido por sua produção automobilística.</p>
+        <p>População: 844.482</p>
+        <div class="city-images">
+            <img src="img/sbc1.jfif" alt="São Bernardo do Campo">
+            <img src="img/sbc2.jfif" alt="São Bernardo do Campo">
+            <img src="img/sbc3.jfif" alt="São Bernardo do Campo">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+    </div>
+</body>
+</html>
