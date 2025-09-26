@@ -1,53 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Mim</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    nav {
-      background-color: #2c3e50;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        /* Importação das fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&family=Dancing+Script:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+        /* ESTILOS GLOBAIS E ESTRUTURA */
+        body {
+            background-color: #f7f7f7; /* Cor de fundo suave */
+            font-family: 'Merriweather', serif; /* Fonte Padrão */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+    
+    .container {
+        max-width: 900px; /* Largura para combinar com o layout anterior */
+        margin: 30px auto; /* Centraliza o container */
+        padding: 20px; /* Espaçamento interno */
+        background-color: #ffffff; /* Cor de fundo do container */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+    
+    h1 {
+        color: #000066; /* Azul Escuro */
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #ccc;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    h3 { /* Título de Introdução e descrição */
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        color: #333;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    
+    p {
+        color: #333; /* Cor do texto */
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    /* Cores e Fontes Específicas dos Blocos de Estado */
+    /* Bloco Minas Gerais */
+    .minas-gerais-block {
+        background-color: #f0fff0; /* Verde bem claro (MG) */
+        border-left: 5px solid #660000; /* Marrom Escuro (MG) */
+        padding: 20px;
+        margin-bottom: 25px;
+        font-family: 'Merriweather', serif;
     }
-    nav a:hover {
-      color: #f39c12;
+    .minas-gerais-block h2 { color: #660000; }
+    
+    /* Bloco São Paulo */
+    .sao-paulo-block {
+        background-color: #fff0d9; /* Laranja/Amarelo Claro (SP) */
+        border-left: 5px solid #ff9900; /* Laranja (SP) */
+        padding: 20px;
+        margin-bottom: 25px;
+        font-family: 'Saira', sans-serif;
     }
-    .container { padding: 20px; }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; }
-  </style>
+    .sao-paulo-block h2 { color: #660000; }
+    
+    /* Bloco Rio de Janeiro */
+    .rio-de-janeiro-block {
+        background-color: #e0f0ff; /* Azul Claro (RJ) */
+        border-left: 5px solid #004d00; /* Verde/Azul (RJ) */
+        padding: 20px;
+        margin-bottom: 25px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .rio-de-janeiro-block h2 { color: #000066; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-family: 'Merriweather', serif; /* Mantém a fonte legível na tabela */
+    }
+    
+    th {
+        background-color: #000066; /* Azul Escuro */
+        color: white;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 350px; /* Altura para melhor visualização */
+        border: 1px solid #ccc; /* Borda para destaque */
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+    }
+    
+    a {
+        color: #004d00; /* Verde/Azul da Paleta */
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Sobre Mim</a>
-    <a href="musicas.html">Músicas</a>
-    <a href="receitas.html">Receitas</a>
-  </nav>
+    <div class="container">
+        <h1>Os três estados brasileiros mais importantes do ponto de vista econômico</h1>
+        <h3>Do ponto de vista econômico, os estados mais importantes do Brasil são aqueles com maior participação no PIB (Produto Interno Bruto), refletindo a força de sua economia. Os três estados mais importantes economicamente são:</h3>
+        
+        <div class="minas-gerais-block">
+            <h2>Minas Gerais</h2>
+            <p>Minas Gerais é conhecido por suas montanhas e rica cultura. É o segundo estado mais populoso do Brasil.</p>
+            <table>
+                <tr><th>Área</th><td>586.522 km²</td></tr>
+                <tr><th>População</th><td>21.292.000</td></tr>
+                <tr><th>Ano de Fundação</th><td>1720</td></tr>
+                <tr><th>PIB</th><td>R$ 635 bilhões</td></tr>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367532.43123812586!2d-44.196530897136!3d-18.512180132142668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b64c79b4b9645d7%3A0x3d5b6376f558cd7!2sMinas%20Gerais!5e0!3m2!1spt-BR!2sbr!4v1633361932999!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+            <a href="minas.html">Mais sobre Minas Gerais</a>
+        </div>
 
-  <div class="container">
-    <h1>Sobre Mim</h1>
-    <p>Olá! Meu nome é Kayque, sou uma pessoa apaixonada por aprender e explorar novas ideias...</p>
+        <div class="sao-paulo-block">
+            <h2>São Paulo</h2>
+            <p>São Paulo é o estado mais rico e populoso do Brasil, com uma vasta diversidade cultural e econômica.</p>
+            <table>
+                <tr><th>Área</th><td>248.222 km²</td></tr>
+                <tr><th>População</th><td>46.289.000</td></tr>
+                <tr><th>Ano de Fundação</th><td>1554</td></tr>
+                <tr><th>PIB</th><td>R$ 2,1 trilhões</td></tr>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367532.43123812586!2d-46.63881836809888!3d-23.55051987881618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50a7a2d60cbf%3A0xa4ef9c5ef6cc8c5e!2sSão%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1633361932999!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+            <a href="sãopaulo.html">Mais sobre São Paulo</a>
+        </div>
 
-    <h2>Meus Hobbies</h2>
-    <p>Esportes como vôlei e futsal.</p>
-
-    <h2>Minhas Habilidades</h2>
-    <p>Sei cozinhar bem e também tenho facilidade com jogos de computador.</p>
-
-    <h2>Contato</h2>
-    <p><a href="mailto:kayquemariano2014@gmail.com">Envie um e-mail</a></p>
-    <p><a href="https://www.instagram.com/kayquemariano_/" target="_blank">Instagram</a></p>
-  </div>
+        <div class="rio-de-janeiro-block">
+            <h2>Rio de Janeiro</h2>
+            <p>O Rio de Janeiro é famoso por suas praias, carnaval e paisagens deslumbrantes, sendo um dos destinos turísticos mais populares do Brasil.</p>
+            <table>
+                <tr><th>Área</th><td>43.696 km²</td></tr>
+                <tr><th>População</th><td>17.366.000</td></tr>
+                <tr><th>Ano de Fundação</th><td>1565</td></tr>
+                <tr><th>PIB</th><td>R$ 668 bilhões</td></tr>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367532.43123812586!2d-43.196530297136!3d-22.912345332142668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd80a29c17aa63b%3A0xd49025e8f4f73ff5!2sRio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1633361932999!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+            <a href="riodejaneiro.html">Mais sobre o Rio de Janeiro</a>
+        </div>
+    </div>
 </body>
 </html>
-

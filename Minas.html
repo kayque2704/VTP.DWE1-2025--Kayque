@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minas Gerais</title>  
+    <style>
+        /* Importação das fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+        /* CONFIGURAÇÕES GLOBAIS DE MG */
+        body {
+            background-color: #f7f7f7; /* Fundo geral claro */
+            color: #333;
+            font-family: 'Merriweather', serif; /* Fonte Específica */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f0fff0; /* Fundo da seção MG (Verde Claro) */
+            border-left: 5px solid #660000; /* Borda Marrom */
+        }
+        h1, h2, h3 {
+            color: #660000; /* Cor Marrom Escuro (Destaque MG) */
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        /* MENU DE NAVEGAÇÃO */
+        .menu {
+            max-width: 900px;
+            margin: 30px auto 20px auto;
+            padding: 15px;
+            background-color: #e0f0e0; /* Fundo do Menu */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .menu h1 {
+            color: #660000;
+            font-size: 1.5em;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+        .menu h3 {
+            color: #660000;
+            border-bottom: none;
+        }
+        .menu a {
+            display: inline-block; /* Alinha horizontalmente */
+            padding: 5px 10px;
+            margin: 5px 10px 5px 0;
+            text-decoration: none;
+            color: #660000;
+            background-color: #fff;
+            border: 1px solid #660000;
+            border-radius: 3px;
+        }
+        .menu a:hover {
+            background-color: #660000;
+            color: white;
+        }
+
+        /* ESTILO DOS BOTÕES (Voltar ao Topo/Principal) */
+        button {
+            margin-top: 15px;
+            background-color: #660000; /* Cor de MG */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #330000;
+        }
+
+        /* ESTILO DAS IMAGENS (Três em Linha) */
+        .city-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .city-images img {
+            width: calc(33.33% - 7px); /* Garante que caibam 3 com espaço */
+            height: auto;
+            object-fit: cover;
+            border: 2px solid #660000;
+            border-radius: 5px;
+        }
+    </style>
+</head>       
+<body>
+    <div class="menu">
+        <h1>Navegue pelas Cidades de Minas Gerais</h1>
+        <h3>Minas Gerais</h3>
+        <a href="#bh">Belo Horizonte</a>
+        <a href="#uberlandia">Uberlândia</a>
+        <a href="#contagem">Contagem</a>
+        <a href="#juiz">Juiz de Fora</a>
+        <a href="#uberaba">Uberaba</a>
+    </div>
+
+    <div class="container">
+        <h1 id="bh">Belo Horizonte</h1>
+        <p>Belo Horizonte é a capital do estado, conhecida por sua arquitetura moderna e vida cultural vibrante.</p>
+        <p>População: 2.521.564</p>
+        <div class="city-images">
+            <img src="img/bh1.webp" alt="Belo Horizonte">
+            <img src="img/bh2.png" alt="Belo Horizonte">
+            <img src="img/bh3.jfif" alt="Belo Horizonte">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="uberlandia">Uberlândia</h3>
+        <p>Uberlândia é um importante centro econômico e industrial, localizada no Triângulo Mineiro.</p>
+        <p>População: 700.215</p>
+        <div class="city-images">
+            <img src="img/ub1.jfif" alt="Uberlândia">
+            <img src="img/ub2.jpg" alt="Uberlândia">
+            <img src="img/ub3.jfif" alt="Uberlândia">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="contagem">Contagem</h3>
+        <p>Contagem é um município da Região Metropolitana de Belo Horizonte, conhecido por sua indústria.</p>
+        <p>População: 663.262</p>
+        <div class="city-images">
+            <img src="img/cg1.jfif" alt="Contagem">
+            <img src="img/cg2.webp" alt="Contagem">
+            <img src="img/cg3.jpg" alt="Contagem">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="juiz">Juiz de Fora</h3>
+        <p>Juiz de Fora é um importante centro regional, conhecido por suas universidades e infraestrutura.</p>
+        <p>População: 547.966</p>
+        <div class="city-images">
+            <img src="img/juiz1.jfif" alt="Juiz de Fora">
+            <img src="img/juiz2.jpg" alt="Juiz de Fora">
+            <img src="img/juiz3.jpg" alt="Juiz de Fora">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+
+        <h3 id="uberaba">Uberaba</h3>
+        <p>Uberaba é famosa por sua produção agrícola e eventos de grande porte, como a Exposição Nacional do Peão.</p>
+        <p>População: 329.200</p>
+        <div class="city-images">
+            <img src="img/ube1.jpg" alt="Uberaba">
+            <img src="img/ube2.jfif" alt="Uberaba">
+            <img src="img/ube3.jfif" alt="Uberaba">
+        </div>
+        <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+        <button onclick="window.location.href='index.html'">Voltar para a Página Inicial</button>
+    </div>
+</body>
+</html>
